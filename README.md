@@ -23,7 +23,9 @@ Run everything with `./run_all.sh` (about 6 minutes on a laptop CPU). Install wi
 
 All numbers below come from `./run_all.sh` (seeded, so they reproduce).
 
-### 1. Calibration to a virtual shaker test — `results/calibration_convergence.png`
+### 1. Calibration to a virtual shaker test
+
+![Calibration convergence](results/calibration_convergence.png)
 
 The "standard" model (nominal modulus and connector, about 4 % damping on mode 1) misses the natural frequencies by 7.7 % and the weighted U_rms by 12.7 %.
 
@@ -37,7 +39,9 @@ The "standard" model (nominal modulus and connector, about 4 % damping on mode 1
 
 Bayesian optimization needs about **3× fewer FE runs** for the stiffness stage and recovers the stiffness parameters more accurately. Both methods match U_rms to well below the 2 % measurement noise, but with **different damping splits**: from U_rms at three points, Rayleigh and connector damping are not separately identifiable.
 
-### 2. Fatigue-life surrogates — `results/parity_plots.png`, `results/learning_curve.png`
+### 2. Fatigue-life surrogates
+
+![Parity plots](results/parity_plots.png)
 
 Target: log10(fatigue life in hours), 2,000 samples, 20 % held out for testing.
 
@@ -53,7 +57,11 @@ Target: log10(fatigue life in hours), 2,000 samples, 20 % held out for testing.
 - Log-transformed inputs cut the GPR error from 0.023 to 0.007 decades.
 - One physics evaluation takes about 55 ms here; one GPR prediction about 0.02 ms.
 
-### 3. Worst-case-temperature design — `results/design_optimization.png`
+<img src="results/learning_curve.png" width="480" alt="Learning curve">
+
+### 3. Worst-case-temperature design
+
+![Design optimization](results/design_optimization.png)
 
 Case: 60 mm bracket, 150 g module, calibrated damping, 10–200 Hz at 1 g RMS, life target 2,000 h anywhere between −40 and 105 °C.
 
@@ -61,7 +69,9 @@ Case: 60 mm bracket, 150 g module, calibrated damping, 10–200 Hz at 1 g RMS, l
 - Governing temperature: **105 °C**. Lightest design: **t = 6.56 mm** (GPR mean − 2σ: 2,015 h).
 - Physics-model check at 6.56 mm: **2,131 h** at the worst temperature, so the target is met.
 
-### 4. PINN modal identification — `results/pinn_modal_id.png`
+### 4. PINN modal identification
+
+![PINN identification](results/pinn_modal_id.png)
 
 60 samples of a 50 ms free decay with 2 % noise; starting values from an uncalibrated model with the default 4 % damping.
 
