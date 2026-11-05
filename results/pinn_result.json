@@ -1,0 +1,27 @@
+{
+  "true": {
+    "fn_Hz": 64.0,
+    "zeta": 0.022
+  },
+  "initial_guess": {
+    "fn_Hz": 58.0,
+    "zeta": 0.04
+  },
+  "pinn": {
+    "fn_Hz": 64.03319466526462,
+    "zeta": 0.021707904253357786,
+    "fn_error_pct": 0.05186666447596355,
+    "zeta_error_pct": 1.3277079392827842
+  },
+  "least_squares": {
+    "fn_Hz": 63.97823601003732,
+    "zeta": 0.0223141029623238,
+    "fn_error_pct": 0.03400623431668581,
+    "zeta_error_pct": 1.4277407378354576
+  },
+  "measurement": {
+    "n_samples": 60,
+    "noise_rel": 0.02,
+    "duration_s": 0.05
+  }
+}

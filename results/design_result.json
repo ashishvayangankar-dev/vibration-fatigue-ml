@@ -1,0 +1,16 @@
+{
+  "case": {
+    "L_mm": 60.0,
+    "m_mod_g": 150.0,
+    "alpha": 17.3,
+    "grms": 1.0
+  },
+  "target_life_h": 2000.0,
+  "chosen_thickness_mm": 6.56,
+  "governing_temperature_C": 105.0,
+  "surrogate_worst_life_h": 2108.553692857117,
+  "surrogate_conservative_life_h": 2014.826364187685,
+  "physics_worst_life_h": 2130.585470582734,
+  "physics_meets_target": true,
+  "n_designs_screened": 9030
+}

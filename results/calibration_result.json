@@ -1,0 +1,47 @@
+{
+  "true_parameters": {
+    "e_scale": 1.15,
+    "alpha": 17.3,
+    "k_c": 60000.0,
+    "c_c": 3.0
+  },
+  "experiment": {
+    "urms_mid_mm": 0.07859054622930997,
+    "urms_tip_mm": 0.2536898523173343,
+    "urms_module_mm": 0.41698723693811296,
+    "f1": 63.34508508096193,
+    "f2": 186.56542642122767
+  },
+  "standard_model": {
+    "freq_error": 0.07717329812772351,
+    "urms_error": 0.12669500606453069
+  },
+  "direct_search": {
+    "stage1_evals": 600,
+    "stage1_best_error": 2.0059930124069706e-05,
+    "stage1_evals_to_target": 63,
+    "stage2_evals": 600,
+    "stage2_best_error": 0.0011272552720568742,
+    "stage2_evals_to_target": 8,
+    "identified": {
+      "e_scale": 1.1352730009441492,
+      "k_c": 60681.30227917046,
+      "alpha": 13.789387717252241,
+      "c_c": 3.845779480207494
+    }
+  },
+  "bayesian_optimization": {
+    "stage1_evals": 30,
+    "stage1_best_error": 0.0022906699977045344,
+    "stage1_evals_to_target": 21,
+    "stage2_evals": 30,
+    "stage2_best_error": 0.0030314212942408295,
+    "stage2_evals_to_target": 8,
+    "identified": {
+      "e_scale": 1.1497254089280473,
+      "k_c": 59932.46329043865,
+      "alpha": 2.0,
+      "c_c": 6.457549726990452
+    }
+  }
+}
